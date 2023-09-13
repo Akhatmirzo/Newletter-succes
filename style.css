@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main {
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(234, 29%, 20%, 0.873);
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    border-radius: 45px;
+}
+
+.left-view {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 65px 25px 50px;
+    gap: 1.5em;
+}
+
+.left-view h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.matters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+.matters .ensure {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.matters .ensure img {
+    width: 16px;
+    height: 24px;
+    display: flex;
+}
+
+.left-view form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.left-view form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.left-view form div label {
+    font-size: 14px !important;
+}
+
+.left-view form div input {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1.5px solid #7b7a7ad9;
+}
+
+.left-view form div input:focus {
+    border: 1px solid (231, 7%, 60%);
+}
+
+.left-view form button {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+}
+
+.left-view form button:hover {
+    background-image: linear-gradient(#f4198e, #f1ab50);
+}
+
+.right-view {
+    width: 360px;
+    border-radius: 25px;
+}
+
+.right-view img {
+    width: 100%;
+    height: auto;
+}
+
+.desktop-success {
+    width: 460px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    gap: 2em;
+}
+
+.desktop-success img {
+    width: 50px;
+    height: 50px;
+}
+
+.desktop-success h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 105%;
+}
+
+.desktop-success p {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.desktop-success p span {
+    font-weight: 700;
+}
+
+.desktop-success button {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+}
+
+.desktop-success button:hover {
+    background-image: linear-gradient(#f4198e, #f1ab50);
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 991px;
+    }
+
+    .box {
+        width: 600px;
+    }
+
+    .left-view {
+        width: 540px;
+        padding: 15px 35px 15px 15px;
+        gap: 1.5em;
+    }
+
+    .left-view h1 {
+        font-size: 2.5em;
+    }
+
+    .matters {
+        gap: 0.5em;
+    }
+
+    .matters .ensure {
+        gap: 0.5em;
+    }
+
+    .left-view form {
+        gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .main {
+        background: transparent;
+    }
+
+    .container {
+        max-width: 678px;
+    }
+
+    .box {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .left-view {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        gap: 1em;
+    }
+
+    .left-view h1 {
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+
+    .matters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    .matters .ensure {
+        display: flex;
+        align-items: center;
+        gap: 0.7em;
+    }
+
+    .matters .ensure img {
+        width: 16px;
+        height: 24px;
+        display: flex;
+    }
+
+    .left-view form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7em;
+    }
+
+    .right-view {
+        width: 100%;
+        height: 300px;
+    }
+
+    .right-view img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 0 25px 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .box {
+        flex-direction: column-reverse;
+    }
+}
